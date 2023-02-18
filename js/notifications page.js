@@ -13,4 +13,5 @@ notificationsNumber.innerHTML = notRead.length
             e.classList.remove("not-read")
         })
         notificationsNumber.innerHTML = `0`
-    }
+        makeAllRead.remove()
+ }

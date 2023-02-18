@@ -6,11 +6,18 @@ body {
 .notifications {
   background-color: white;
   padding: 15px;
-  width: 400px;
+  width: 50%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 400px) {
+  .notifications {
+    width: 90%;
+    top: 59%;
+    
+  }
 }
 .notifications .header {
   display: flex;
@@ -44,12 +51,6 @@ body {
 }
 .notifications .header .all-read:hover {
   color: hsl(224deg, 81.4%, 25.3%);
-}
-@media (max-width: 360px) {
-  .notifications .notifications {
-    width: 100%;
-    height: 100%;
-  }
 }
 .notifications ul {
   padding: 0;
